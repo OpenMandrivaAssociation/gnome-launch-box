@@ -1,6 +1,6 @@
 %define	name	gnome-launch-box
 %define version	0.4
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 Name:		%name
 Version:	%version
@@ -12,6 +12,7 @@ URL:		http://developer.imendio.com/projects/gnome-launch-box
 Source0:		%{name}-%{version}.tar.bz2
 Source1:        gnome-launch-box.desktop
 Source2:        90-gnome-launch-box.xml
+Patch0:		gnome-launch-box-0.4-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:	gtk2-devel >= 2.6.0
 BuildRequires:	libgnomeui2-devel >= 2.10.0
@@ -38,6 +39,7 @@ so don't get your hopes up too much.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x --datadir=%{_datadir}/%{name}
