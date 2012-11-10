@@ -1,0 +1,11 @@
+--- tests/search-applications.c.str	2009-05-07 14:59:57.000000000 +0200
++++ tests/search-applications.c	2009-05-07 15:00:06.000000000 +0200
+@@ -31,7 +31,7 @@
+ 	GSList *l;
+ 	
+ 	const char *name = gmenu_tree_directory_get_name (dir);
+-	g_warning (name);
++	g_warning ("%s",name);
+ 
+ 	items = gmenu_tree_directory_get_contents (dir);
+ 
