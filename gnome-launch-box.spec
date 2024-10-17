@@ -8,7 +8,7 @@ Release:	%release
 Summary:	GNOME Launch Box
 License:	GPL
 Group:		Graphical desktop/GNOME
-URL:		http://developer.imendio.com/projects/gnome-launch-box
+URL:		https://developer.imendio.com/projects/gnome-launch-box
 Source0:		%{name}-%{version}.tar.bz2
 Source1:        gnome-launch-box.desktop
 Source2:        90-gnome-launch-box.xml
